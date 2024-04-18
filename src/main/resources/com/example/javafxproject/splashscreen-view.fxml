@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox alignment="CENTER" prefHeight="184.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Attendify" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="48.0"/>
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Syncing Data" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="7.0" top="50.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Text>
+                <ProgressIndicator fx:id="loadingIndicator" visible="true">
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </ProgressIndicator>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
